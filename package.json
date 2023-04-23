@@ -1,0 +1,35 @@
+{
+  "name": "vue3-demo-jktest",
+  "private": false,
+  "version": "0.0.8",
+  "type": "module",
+  "keywords": [
+    "vue-jk-demo",
+    "vue-jk"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "lib/vue3-demo-jktest.umd.cjs",
+  "module": "lib/vue3-demo-jktest.js",
+  "exports": {
+    "./lib/style.css": "./lib/style.css",
+    ".": {
+      "import": "./lib/vue3-demo-jktest.js",
+      "require": "./lib/vue3-demo-jktest.umd.cjs"
+    }
+  },
+  "dependencies": {
+    "vue": "^3.2.47",
+    "vue3-demo-jktest": "^0.0.8"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "vite": "^4.2.0"
+  }
+}
